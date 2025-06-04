@@ -1,46 +1,58 @@
-body {
-  font-family: 'Roboto';
-}
-#head{
-  position: fixed;
-  top: 0;
-  left: 10rem;
-  width: 100%;
- background-color: transparent;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  z-index: 1000;
-}
-#fixed-line {
-  position: fixed;
-  top: 60px; 
-  left: 0;
-  width: 100%;
-  border: none;
-  border-top: 1px solid #ccc;
-  z-index: 999;
-}       
-#arrow{
+ body {
+    font-family: 'Roboto';
+    margin: 0;
+  }
+  #head {
+    position: fixed;
+    top: 0;
+    left: 10rem;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    flex-wrap: nowrap; 
+  }
+  #head > span {
+    white-space: nowrap; 
+    font-size: 1.2rem;
+    color: black;
+  }
+  #fixed-line {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+  }
+  #arrow {
     color: green;
     margin-right: 1rem;
     font-size: 1.5rem;
-}
-#projectImage{
-    width: 100%; 
-    height: 200px; 
+  }
+  #projectImage {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-}
-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    margin-bottom: 10px;
+  }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  margin-bottom: 10px;
-}
+  @media (max-width: 600px) {
+    #head {
+      left: 1rem; 
+      padding: 10px 10px;
+    }
+  }
